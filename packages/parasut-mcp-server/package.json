@@ -1,0 +1,70 @@
+{
+  "name": "@yigitkonur/parasut-mcp-server",
+  "version": "1.0.0",
+  "description": "Unofficial MCP (Model Context Protocol) server for Paraşüt API - Turkish accounting and invoicing. Not affiliated with Paraşüt.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "parasut-mcp": "./dist/index.js"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "lint": "eslint src --ext .ts",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "parasut",
+    "paraşüt",
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "llm",
+    "ai",
+    "accounting",
+    "invoice",
+    "e-fatura",
+    "e-arsiv",
+    "turkey",
+    "api",
+    "unofficial"
+  ],
+  "author": "Yigit Konur <yigit@konur.dev>",
+  "license": "MIT",
+  "homepage": "https://github.com/yigitkonur/parasut-mcp-server#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yigitkonur/parasut-mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yigitkonur/parasut-mcp-server/issues"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "@yigitkonur/parasut-node-sdk": "file:../parasut-node-sdk",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "eslint": "^8.55.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "typescript": "^5.3.0"
+  }
+}

@@ -1,0 +1,1 @@
+{"version":3,"file":"shipmentDocuments.js","sourceRoot":"","sources":["../../src/resources/shipmentDocuments.ts"],"names":[],"mappings":"AAAA;;;;GAIG;AAEH,OAAO,EAAE,YAAY,EAAuB,MAAM,mBAAmB,CAAC;AAqBtE,MAAM,OAAO,yBAA0B,SAAQ,YAI9C;IACC,YAAY,MAAyD;QACnE,KAAK,CAAC;YACJ,GAAG,MAAM;YACT,QAAQ,EAAE,qBAAqB;YAC/B,YAAY,EAAE,oBAAoB;SACnC,CAAC,CAAC;IACL,CAAC;CACF"}

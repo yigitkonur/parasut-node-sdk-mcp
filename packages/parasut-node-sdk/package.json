@@ -1,0 +1,71 @@
+{
+  "name": "@yigitkonur/parasut-node-sdk",
+  "version": "1.0.0",
+  "description": "Unofficial Type-safe TypeScript SDK for the Paraşüt API v4 - Turkish accounting and invoicing. Not affiliated with Paraşüt.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "generate": "tsx scripts/generate-types.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src --ext .ts",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "parasut",
+    "paraşüt",
+    "accounting",
+    "invoice",
+    "e-fatura",
+    "e-arsiv",
+    "e-invoice",
+    "turkey",
+    "api",
+    "sdk",
+    "typescript",
+    "json-api",
+    "oauth",
+    "muhasebe",
+    "fatura",
+    "unofficial"
+  ],
+  "author": "Yigit Konur <yigit@konur.dev>",
+  "license": "MIT",
+  "homepage": "https://github.com/yigitkonur/parasut-node-sdk#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yigitkonur/parasut-node-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yigitkonur/parasut-node-sdk/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "eslint": "^8.55.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "tsx": "^4.6.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0",
+    "yaml": "^2.3.0"
+  },
+  "peerDependencies": {},
+  "dependencies": {}
+}

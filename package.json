@@ -1,25 +1,43 @@
 {
-  "name": "Parasut-API-openapi-spec",
-  "version": "0.0.1",
-  "dependencies": {
-    "bower": "^1.7.7",
-    "connect": "^3.4.1",
-    "cors": "^2.7.1",
-    "deploy-to-gh-pages": "^1.1.0",
-    "gulp": "^3.9.1",
-    "gulp-connect": "^4.2.0",
-    "gulp-util": "^3.0.7",
-    "portfinder": "^1.0.3",
-    "shelljs": "^0.7.0",
-    "swagger-repo": "^1.0.0"
-  },
+  "name": "parasut-node-sdk-mcp",
+  "version": "1.0.0",
+  "description": "Unofficial TypeScript SDK and MCP Server for Paraşüt API - Turkish accounting and e-invoicing",
   "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "deploy": "npm run build && deploy-to-gh-pages --update web_deploy",
-    "build": "node ./scripts/build.js",
-    "swagger": "swagger-repo",
-    "test": "echo skip test",
-    "start": "gulp serve",
-    "deploy-branch": "node ./scripts/deploy-branch.js"
+    "build": "npm run build --workspaces",
+    "build:sdk": "npm run build --workspace=@yigitkonur/parasut-node-sdk",
+    "build:mcp": "npm run build --workspace=@yigitkonur/parasut-mcp-server",
+    "typecheck": "npm run typecheck --workspaces",
+    "lint": "npm run lint --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "clean": "rm -rf packages/*/dist packages/*/node_modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yigitkonur/parasut-node-sdk-mcp.git"
+  },
+  "keywords": [
+    "parasut",
+    "paraşüt",
+    "sdk",
+    "mcp",
+    "typescript",
+    "e-fatura",
+    "e-invoice",
+    "turkey",
+    "accounting",
+    "api"
+  ],
+  "author": "Yigit Konur <yigit@konur.dev>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yigitkonur/parasut-node-sdk-mcp/issues"
+  },
+  "homepage": "https://github.com/yigitkonur/parasut-node-sdk-mcp#readme",
+  "engines": {
+    "node": ">=18.0.0"
   }
 }

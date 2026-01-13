@@ -1,0 +1,1 @@
+{"version":3,"file":"stockMovements.js","sourceRoot":"","sources":["../../src/resources/stockMovements.ts"],"names":[],"mappings":"AAAA;;;;GAIG;AAEH,OAAO,EAAE,YAAY,EAAuB,MAAM,mBAAmB,CAAC;AAsBtE,MAAM,OAAO,sBAAuB,SAAQ,YAI3C;IACC,YAAY,MAAyD;QACnE,KAAK,CAAC;YACJ,GAAG,MAAM;YACT,QAAQ,EAAE,kBAAkB;YAC5B,YAAY,EAAE,iBAAiB;SAChC,CAAC,CAAC;IACL,CAAC;CACF"}
