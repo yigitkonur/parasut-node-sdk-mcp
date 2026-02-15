@@ -24,7 +24,7 @@ Use Claude AI to manage your Turkish accounting - invoices, contacts, products, 
 ### Global Install (Recommended)
 
 ```bash
-npm install -g @yigitkonur/parasut-mcp-server
+pnpm add -g @yigitkonur/parasut-mcp-server
 ```
 
 ### Or use with npx
@@ -279,16 +279,15 @@ git clone https://github.com/yigitkonur/parasut-node-sdk-mcp.git
 cd parasut-node-sdk-mcp
 
 # Install dependencies
-npm install
-
+pnpm install
 # Build
-npm run build:mcp
+pnpm build:mcp
 
 # Run locally
-npm run start --workspace=@yigitkonur/parasut-mcp-server
+pnpm start --workspace=@yigitkonur/parasut-mcp-server
 
 # Type check
-npm run typecheck
+pnpm typecheck
 ```
 
 ## Disclaimer

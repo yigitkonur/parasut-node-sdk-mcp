@@ -41,7 +41,7 @@ A monorepo containing two packages for Turkish accounting and e-invoicing:
 ### SDK Usage
 
 ```bash
-npm install @yigitkonur/parasut-node-sdk
+pnpm add @yigitkonur/parasut-node-sdk
 ```
 
 ```typescript
@@ -81,7 +81,7 @@ const { data: invoice } = await client.salesInvoices.create({
 ### MCP Server Usage
 
 ```bash
-npm install -g @yigitkonur/parasut-mcp-server
+pnpm add -g @yigitkonur/parasut-mcp-server
 ```
 
 Add to Claude Desktop config (`~/Library/Application Support/Claude/claude_desktop_config.json`):
@@ -158,13 +158,12 @@ git clone https://github.com/yigitkonur/parasut-node-sdk-mcp.git
 cd parasut-node-sdk-mcp
 
 # Install
-npm install
-
+pnpm install
 # Build all
-npm run build
+pnpm build
 
 # Type check
-npm run typecheck
+pnpm typecheck
 ```
 
 ## Disclaimer

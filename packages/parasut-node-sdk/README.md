@@ -21,7 +21,7 @@
 ## Installation
 
 ```bash
-npm install @yigitkonur/parasut-node-sdk
+pnpm add @yigitkonur/parasut-node-sdk
 ```
 
 **Requirements:** Node.js 18+ (uses native fetch)
