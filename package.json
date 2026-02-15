@@ -2,16 +2,13 @@
   "name": "parasut-node-sdk-mcp",
   "version": "1.0.0",
   "description": "Unofficial TypeScript SDK and MCP Server for Para\u015f\u00fct API - Turkish accounting and e-invoicing",
-  "workspaces": [
-    "packages/*"
-  ],
   "scripts": {
-    "build": "npm run build --workspaces",
-    "build:sdk": "npm run build --workspace=@yigitkonur/parasut-node-sdk",
-    "build:mcp": "npm run build --workspace=@yigitkonur/parasut-mcp-server",
-    "typecheck": "npm run typecheck --workspaces",
-    "lint": "npm run lint --workspaces --if-present",
-    "test": "npm run test --workspaces --if-present",
+    "build": "pnpm -r build",
+    "build:sdk": "pnpm --filter @yigitkonur/parasut-node-sdk build",
+    "build:mcp": "pnpm --filter @yigitkonur/parasut-mcp-server build",
+    "typecheck": "pnpm -r typecheck",
+    "lint": "pnpm -r --if-present lint",
+    "test": "pnpm -r --if-present test",
     "clean": "rm -rf packages/*/dist packages/*/node_modules"
   },
   "repository": {

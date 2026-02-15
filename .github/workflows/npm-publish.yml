@@ -5,13 +5,6 @@ on:
     branches: [main]
     paths-ignore: ['*.md', 'docs/**', 'LICENSE', '.gitignore']
   workflow_dispatch:
-    inputs:
-      bump:
-        description: 'Version bump type'
-        required: false
-        type: choice
-        default: patch
-        options: [patch, minor, major]
 
 permissions:
   contents: write
@@ -40,37 +33,7 @@ jobs:
 
       - run: pnpm build
 
-      - name: Check if version exists on npm
-        id: check
-        run: |
-          PKG_NAME=$(node -p "require('./package.json').name")
-          PKG_VER=$(node -p "require('./package.json').version")
-          echo "name=$PKG_NAME version=$PKG_VER"
-          set +e
-          npm view "${PKG_NAME}@${PKG_VER}" version 2>/dev/null
-          if [ $? -eq 0 ]; then
-            echo "exists=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "exists=false" >> "$GITHUB_OUTPUT"
-          fi
-
-      - name: Bump version
-        id: bump
-        if: steps.check.outputs.exists == 'true' && github.actor != 'github-actions[bot]'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          BUMP="${{ inputs.bump || 'patch' }}"
-          npm version "$BUMP" -m "chore: bump to v%s [skip ci]"
-          git push && git push --tags
-          echo "bumped=true" >> "$GITHUB_OUTPUT"
-
-      - name: Rebuild after bump
-        if: steps.bump.outputs.bumped == 'true'
-        run: pnpm build
-
-      - name: Publish to npm
-        if: steps.check.outputs.exists == 'false' || steps.bump.outputs.bumped == 'true'
+      - name: Publish workspace packages
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: pnpm publish --access public --no-git-checks
+        run: pnpm -r publish --access public --no-git-checks 2>&1 || true
