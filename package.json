@@ -1,8 +1,7 @@
 {
   "name": "parasut-node-sdk-mcp",
   "version": "1.0.0",
-  "description": "Unofficial TypeScript SDK and MCP Server for Paraşüt API - Turkish accounting and e-invoicing",
-  "private": true,
+  "description": "Unofficial TypeScript SDK and MCP Server for Para\u015f\u00fct API - Turkish accounting and e-invoicing",
   "workspaces": [
     "packages/*"
   ],
@@ -21,7 +20,7 @@
   },
   "keywords": [
     "parasut",
-    "paraşüt",
+    "para\u015f\u00fct",
     "sdk",
     "mcp",
     "typescript",
