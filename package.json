@@ -1,5 +1,5 @@
 {
-  "name": "parasut-node-sdk-mcp",
+  "name": "mcp-parasut",
   "version": "1.0.0",
   "description": "Unofficial TypeScript SDK and MCP Server for Para\u015f\u00fct API - Turkish accounting and e-invoicing",
   "scripts": {
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yigitkonur/parasut-node-sdk-mcp.git"
+    "url": "git+https://github.com/yigitkonur/mcp-parasut.git"
   },
   "keywords": [
     "parasut",
@@ -30,9 +30,9 @@
   "author": "Yigit Konur <yigit@konur.dev>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yigitkonur/parasut-node-sdk-mcp/issues"
+    "url": "https://github.com/yigitkonur/mcp-parasut/issues"
   },
-  "homepage": "https://github.com/yigitkonur/parasut-node-sdk-mcp#readme",
+  "homepage": "https://github.com/yigitkonur/mcp-parasut#readme",
   "engines": {
     "node": ">=18.0.0"
   }

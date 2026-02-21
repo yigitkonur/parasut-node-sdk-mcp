@@ -275,8 +275,8 @@ Preview:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yigitkonur/parasut-node-sdk-mcp.git
-cd parasut-node-sdk-mcp
+git clone https://github.com/yigitkonur/mcp-parasut.git
+cd mcp-parasut
 
 # Install dependencies
 pnpm install
@@ -305,7 +305,7 @@ MIT © [Yigit Konur](https://github.com/yigitkonur)
 
 ## Links
 
-- [GitHub Repository](https://github.com/yigitkonur/parasut-node-sdk-mcp)
+- [GitHub Repository](https://github.com/yigitkonur/mcp-parasut)
 - [SDK Package](https://www.npmjs.com/package/@yigitkonur/parasut-node-sdk)
 - [Paraşüt API Documentation](https://apidocs.parasut.com/)
 - [MCP Protocol](https://modelcontextprotocol.io/)

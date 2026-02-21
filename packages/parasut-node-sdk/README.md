@@ -388,6 +388,6 @@ MIT © [Yigit Konur](https://github.com/yigitkonur)
 
 ## Links
 
-- [GitHub Repository](https://github.com/yigitkonur/parasut-node-sdk-mcp)
+- [GitHub Repository](https://github.com/yigitkonur/mcp-parasut)
 - [Paraşüt API Documentation](https://apidocs.parasut.com/)
 - [MCP Server Package](https://www.npmjs.com/package/@yigitkonur/parasut-mcp-server)
