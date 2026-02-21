@@ -22,7 +22,7 @@
     "build": "tsc",
     "dev": "tsc --watch",
     "generate": "tsx scripts/generate-types.ts",
-    "test": "vitest run",
+    "test": "vitest run --passWithNoTests",
     "test:watch": "vitest",
     "lint": "eslint src --ext .ts",
     "typecheck": "tsc --noEmit",

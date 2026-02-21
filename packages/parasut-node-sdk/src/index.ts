@@ -5,7 +5,7 @@
  *
  * @example
  * ```typescript
- * import { ParasutClient } from '@parasut/node-sdk';
+ * import { ParasutClient } from '@yigitkonur/parasut-node-sdk';
  *
  * const client = new ParasutClient({
  *   companyId: 115,

@@ -6,7 +6,7 @@
  * Provides AI-friendly tools for Turkish accounting and invoicing.
  *
  * Usage:
- *   npx @parasut/mcp-server
+ *   npx @yigitkonur/parasut-mcp-server
  *
  * Environment Variables:
  *   PARASUT_COMPANY_ID    - Your company ID (required)
